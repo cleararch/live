@@ -47,7 +47,11 @@ less
 lftp
 libfido2
 libusb-compat
+<<<<<<< HEAD
 linux
+=======
+linux-tikogasa
+>>>>>>> c1615dc (第一次提交（伪）)
 linux-atm
 linux-firmware
 linux-firmware-marvell
@@ -122,6 +126,16 @@ xfsprogs
 xl2tpd
 zsh
 
+<<<<<<< HEAD
 gparted
 wimlib
 wqy-microhei
+=======
+wimlib
+wqy-microhei
+kmscon
+pango
+fontconfig
+iwd
+filesystem
+>>>>>>> c1615dc (第一次提交（伪）)

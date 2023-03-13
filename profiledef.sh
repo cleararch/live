@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
+<<<<<<< HEAD
 iso_name="archlinux"
 iso_label="ARCH_$(date +%Y%m)"
 iso_publisher="Arch Linux <https://archlinux.org>"
@@ -15,6 +16,24 @@ arch="x86_64"
 pacman_conf="pacman.conf"
 airootfs_image_type="squashfs"
 airootfs_image_tool_options=('-comp' 'xz' '-Xbcj' 'x86' '-b' '1M' '-Xdict-size' '1M')
+=======
+iso_name="CALIVE"
+iso_label="ClearArch_$(date +%Y%m)"
+iso_publisher="ClearArch <https://cleararch.github.io>"
+iso_application="ClearArch Live/Rescue CD"
+iso_version="$(date +%Y.%m.%d)"
+install_dir="arch"
+buildmodes=('iso')
+bootmodes=('bios.syslinux.mbr'
+           'bios.syslinux.eltorito'
+           'uefi-x64.systemd-boot.eltorito'
+           'uefi-x64.systemd-boot.esp'
+           )
+arch="x86_64"
+pacman_conf="pacman.conf"
+airootfs_image_type="erofs"
+#airootfs_image_tool_options=('-zlzma,9' -E ztailpacking)
+>>>>>>> c1615dc (第一次提交（伪）)
 file_permissions=(
   ["/etc/shadow"]="0:0:400"
   ["/root"]="0:0:750"
